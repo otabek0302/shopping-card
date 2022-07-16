@@ -75,7 +75,7 @@
 {
      background-color: white;
      width: 300px;
-     height: 450px;
+     height: 550px;
      margin: 5px;
      border: 1px solid black;
 }
@@ -84,69 +84,76 @@
 {
      display: block;
      margin: 0 auto;
-     width: auto;
+     width: 100%;
      height: 35%;
      object-fit: contain;
      padding: 9px 0;
 }
 .box_content .box_content_text
 {
-     display: block;
+     display: flex;
+     flex-direction: column;
+     align-items: flex-start;
+     justify-content: space-between;
      margin: 0 auto;
-     width: auto;
+     width: 100%;
      height: 65%;
      background-color: black;
      color:  rgba(255, 255, 255, 0.56);
      text-align: start;
      font-size: 14px;
-     line-height: 17.5px;
+     line-height: 15.5px;
      padding: 8px 16px;
 }
 .box_content .box_content_text .title
 {
      display: block;
-     margin-top: 25px;
-     margin-bottom: 11px;
-     font-size: 22px;
-     line-height: 26px;
+     font-size: 16px;
+     line-height: 17px;
      font-weight: 600;
      text-transform: uppercase;
      width: auto;
      color: white;
 }
+.box_content .box_content_text .desc
+{
+     overflow-y: scroll;
+     width: 100%;
+     height: 120px;
+}
 .box_content .box_content_text .box_icons
 {
      display: flex;
-     justify-content: space-evenly;
      align-items: center;
      margin-top: 16px;
      margin-bottom: 25px;
-     font-size: 22px;
-     line-height: 26px;
+     font-size: 16px;
+     line-height: 18px;
      font-weight: 500;
      text-transform: uppercase;
      width: auto;
      color: white;
 }
-.box_content .box_content_text .box_icons span
-{
-     color: blue;
-     margin-right: 5px;
+.box_content .box_content_text .box_icons img {
+     width: 35px;
+     height: 35px;
 }
 .btn
 {
-     padding: 15px 75px;
+     width: 150px;
+     height: 40px;
      border-radius: 10px;
      background-color: white;
      color: black;
      margin: 0 auto;
      display: block;
-     margin-top: 30px;
+     border: 1px solid #000;
+     cursor: pointer;
 }
 .basket
 {
      width: 100%;
-     height: 60px;
+     height: 60px;  
      display: flex;
      flex-direction: column;
      align-items: center;
@@ -159,16 +166,16 @@
      display: block;
      border: 1px solid #000;
      border-radius: 10px;
-     margin-top: 5px;
+     margin-top: 25px;
      cursor: pointer;
-     font-size: 18px;
+     font-size: 28px;
 }
 .basket .basket_btn img {
      object-fit: contain;
 }
 .basket_main{
      display: none;
-     position: absolute;
+     position: fixed;
      width: 100%;
      height: 100%;
      top: 0;
@@ -177,10 +184,10 @@
 }
 .basket_box 
 {
-     width: 85%;
-     height: 85%;
+     width: 80%;
+     height: 80vh;
      position: relative;
-     top: 80px;
+     top: 50px;
      margin: 0 auto;
      background-color: transparent;
      border: 2px solid white;
@@ -189,20 +196,21 @@
      flex-wrap: wrap;
      justify-content: start;
      align-items: center;
-     box-sizing: border-box;
+     overflow-y: scroll!important;
+
 }
 .close
 {
      position: relative;
+     bottom: -80px;
      width: 200px;
      height: 40px;
      background-color: white;
      color: #000;
      margin: 0 auto;
-     bottom: 0%;
      display: block;
      border: 2px solid #000;
      border-radius: 10px;
-     cursor: pointer;
-     font-size: 18px;
+     font-size: 22px;
+     cursor: pointer!important;    
 }
