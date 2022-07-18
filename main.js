@@ -330,6 +330,7 @@ function reload (el) {
                btn_remove.style = 'background-color: grey!important;';
                if (card.length == 0) {
                     clone.remove(arguments)
+                    basket_box.innerHTML = '';
                } else {
                     basket_box.append(clone);
                }
