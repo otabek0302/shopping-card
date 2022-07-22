@@ -1,0 +1,323 @@
+*{
+     box-sizing: border-box;
+     padding: 0;
+     margin: 0;
+}
+.container
+{
+     display: block;
+     width: 1280px;
+     margin: 0 auto;
+}
+.active {
+     background-color: blue!important;
+     color: white!important;
+     border: 1px solid white!important;
+}
+.box
+{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     width: 100%;
+     height: 120px;
+}
+.box .box_num
+{
+     display: block;
+     padding: 8px 16px;
+     font-size: 28px;
+     font-weight: 600;
+     line-height: 30px;
+     
+}
+.box .box_btns
+{
+     width:40%;
+     display: flex;
+     justify-content: space-evenly;
+     align-items: center;
+     font-size: 28px;
+     font-weight: 600;
+     line-height: 30px;
+     
+
+}
+.box .box_btns .box_btn
+{
+     background-color: white;
+     display: flex;
+     font-size: 18px;
+     font-weight: 500;
+     line-height: 30px;
+     padding: 8px 45px;
+     margin-top: 20px;
+     border-color: black;
+     border-radius: 10px;
+     cursor: pointer;
+}
+
+.box_wrapper
+{
+     width: 100%;
+     height: 100%;
+     padding: 8px 16px;
+     width: 100%;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: start;
+     align-items: center;
+     background-color: whitesmoke;
+     margin-top: 10px;
+}
+.box_content
+{
+     background-color: white;
+     width: 300px;
+     height: 550px;
+     margin: 5px;
+     border: 1px solid black;
+}
+
+.box_content img 
+{
+     display: block;
+     margin: 0 auto;
+     width: 100%;
+     height: 35%;
+     object-fit: contain;
+     padding: 9px 0;
+}
+.box_content .box_content_text
+{
+     display: flex;
+     flex-direction: column;
+     align-items: flex-start;
+     justify-content: space-between;
+     margin: 0 auto;
+     width: 100%;
+     height: 65%;
+     background-color: black;
+     color:  rgba(255, 255, 255, 0.56);
+     text-align: start;
+     font-size: 14px;
+     line-height: 15.5px;
+     padding: 8px 16px;
+}
+.box_content .box_content_text .title
+{
+     display: block;
+     font-size: 16px;
+     line-height: 17px;
+     font-weight: 600;
+     text-transform: uppercase;
+     width: auto;
+     color: white;
+}
+.box_content .box_content_text .desc
+{
+     overflow-y: scroll;
+     width: 100%;
+     height: 120px;
+}
+.box_content .box_content_text .box_icons
+{
+     display: flex;
+     align-items: center;
+     margin-top: 16px;
+     margin-bottom: 25px;
+     font-size: 16px;
+     line-height: 18px;
+     font-weight: 500;
+     text-transform: uppercase;
+     width: auto;
+     color: white;
+}
+.box_content .box_content_text .box_icons img {
+     width: 35px;
+     height: 35px;
+}
+.btn
+{
+     width: 150px;
+     height: 40px;
+     border-radius: 10px;
+     background-color: white;
+     color: black;
+     margin: 0 auto;
+     display: block;
+     border: 1px solid #000;
+     cursor: pointer;
+}
+.title_basket
+{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     width: 100%;
+     height: 200px;
+     font-size: 70px;
+     color: #000;
+     background-color: transparent;
+     font-weight: 800;
+     text-transform: uppercase;
+}
+.title_basket:hover{
+     color: darkblue;
+}
+.basket
+{
+     width: 80%; 
+     height: 400px; 
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     background-color: transparent;
+     border: 2px solid green;
+     overflow-y: scroll !important;
+     margin: 0 auto;
+     padding: 8px 16px;
+}
+.basket_box 
+{
+     width: 100%;
+     height: 300px;
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     align-items: center;
+     padding: 8px 16px;
+     border: 2px solid #000;
+}
+.box_left
+{
+     width: 20%;
+     object-fit: contain;
+}
+.box_left img
+{
+     width: 90%;
+     height: auto;
+}
+.box_midle
+{
+     display: flex;
+     flex-direction: column;
+     align-items: flex-start;
+     justify-content: center;
+     width: 50%;
+     height: auto;
+}
+.box_midle_title
+{
+     font-size: 20px;
+     color: #212121;
+     font-weight: 600;
+     text-transform: uppercase;
+     margin-bottom: 10px;
+     font-family:'Times New Roman', Times, serif;
+}
+.box_midle_dec
+{
+     font-size: 12px;
+     font-family: 'Courier New', Courier, monospace;
+     font-weight: 400;
+     text-transform: lowercase;
+     text-overflow: clip;
+     cursor: text;
+}
+.box_midle_icons
+{
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: flex-start;
+     margin-top: 10px;
+}
+.box_midle_icons p{
+     font-size: 18px;
+     margin-right: 8px;
+}
+.box_midle_icons img{
+     width: 100%;
+     margin-right: 8px;
+}
+.box_right
+{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: space-evenly;
+     width: 22%;
+}
+.box_right .price 
+{
+     font-size: 24px;
+     color: #212121;
+     font-weight: 800;
+     margin-bottom: 30px;
+}
+.box_count
+{
+     display: flex;
+     width: 100%;
+     padding: 8px 16px;
+     align-items: center;
+     justify-content: space-around;
+     margin-top: 10px;
+}
+.dec{
+     width: 40px;
+     height: 40px;
+     border: 3px solid green;
+     border-radius: 50%;
+     cursor: pointer;
+     color: #000;
+     font-size: 20px;
+     font-weight: 800;
+     background-color: transparent;
+} 
+.inc{
+     width: 40px;
+     height: 40px;
+     border: 3px solid green;
+     border-radius: 50%;
+     cursor: pointer;
+     color: #000;
+     font-size: 20px;
+     font-weight: 800;
+     background-color: transparent;
+}
+.count_item{
+     font-size: 30px;
+     color: #000;
+     font-weight: 600;
+}
+.remove {
+     width: 150px;
+     height: 40px;
+     border-radius: 10px;
+     background-color: red;
+     color: yellow;
+     margin: 0 auto;
+     margin-top: 20px;
+     display: block;
+     border: 2px solid green;
+     cursor: pointer;
+}
+.category
+{
+     font-size: 16px;
+     margin-bottom: 15px;
+     color: #212121;
+     font-weight: 400;
+}
+small{
+     font-weight: 900;
+     color: green;
+}
+.hide
+{
+     border-color: gray!important;
+}
